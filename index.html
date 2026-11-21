@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temukan media sosial resmi Muhammad Agung Fajrin.">
+  <title>Muhammad Agung Fajrin | Social Links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+  <div class="profile-picture">
+    <img src="image/profil.jpg" alt="Foto Profil">
+  </div>
+
+  <h1 class="profile-title">MY PROFILE</h1>
+
+  <p>Welcome to my personal space.</p>
+</header>
+
+    <section class="social-list" aria-label="Media sosial Muhammad Agung Fajrin">
+      <article class="social-card instagram">
+        <div class="social-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle class="dot" cx="17.5" cy="6.8" r="1"></circle>
+          </svg>
+        </div>
+        <div class="social-info">
+          <span class="social-type">INSTAGRAM</span>
+          <h2>thisdontshowpast</h2>
+        </div>
+        <a class="follow-link" href="https://www.instagram.com/thisdontshowpast/" target="_blank" rel="noopener noreferrer">
+          FOLLOW <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+      <article class="social-card facebook">
+        <div class="social-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M14.2 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H8v3.1h2.8v8z"></path>
+          </svg>
+        </div>
+        <div class="social-info">
+          <span class="social-type">FACEBOOK</span>
+          <h2>Muhammad Agung Fajrin</h2>
+        </div>
+        <a class="follow-link" href="https://www.facebook.com/share/19wFxT5Kg1/" target="_blank" rel="noopener noreferrer">
+          FOLLOW <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+      <article class="social-card github">
+        <div class="social-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9z"></path>
+          </svg>
+        </div>
+        <div class="social-info">
+          <span class="social-type">GITHUB</span>
+          <h2>aggfrin Account</h2>
+        </div>
+        <a class="follow-link" href="https://github.com/aggfrin" target="_blank" rel="noopener noreferrer">
+          FOLLOW <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+      <!-- MOBILE LEGENDS -->
+<article class="social-card mobile-legends">
+
+  <div class="social-icon">
+    <img src="image/ml-icon.png" alt="Mobile Legends">
+  </div>
+
+  <div class="social-info">
+    <span class="social-type">MOBILE LEGENDS</span>
+    <h2>Sir Arin Account ML</h2>
+  </div>
+
+  <a class="follow-link"
+     href="ml.html"
+     target="_blank"
+     rel="noopener noreferrer">
+    PROFILE <span>↗</span>
+  </a>
+
+</article>
+    </section>
+
+<div class="share-website">
+  <button id="copy-link-button" type="button">
+    COPY WEBSITE LINK ↗
+  </button>
+  <p id="copy-message"></p>
+</div>
+   <footer class="main-footer">
+  <div class="footer-line"></div>
+
+  <p>© <strong>MUHAMMAD AGUNG FAJRIN</strong></p>
+
+  <span class="footer-caption">
+    poet from cikarang~Indonesia
+  </span>
+</footer>
+  </main>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  const copyButton = document.getElementById("copy-link-button");
+  const copyMessage = document.getElementById("copy-message");
+
+  copyButton.addEventListener("click", async function () {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+
+      copyMessage.textContent = "Website link berhasil disalin!";
+      copyButton.textContent = "LINK COPIED ✓";
+    } catch (error) {
+      copyMessage.textContent = "Gagal menyalin. Silakan salin alamat website secara manual.";
+    }
+  });
+</script>
+</body>
+</html>
