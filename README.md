@@ -1,2 +1,2 @@
-# My-Profil-Medsos-Account
+# MyProfil-MedsosPersonal
 Personal Website - Muhammad Agung Fajrin
